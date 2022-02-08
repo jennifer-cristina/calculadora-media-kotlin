@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Controle de Notas"
+        android:textSize="32sp"
+        android:layout_marginBottom="48dp"
+        />
+
+    <EditText
+        android:id="@+id/nota1"
+        android:width="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nota 1"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/nota2"
+        android:width="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nota 2"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/faltas"
+        android:width="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Faltas"
+        android:inputType="number"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp">
+
+        <Button
+
+            android:id="@+id/calcular"
+            android:width="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:backgroundTint="@color/teal_700"/>
+
+        <Button
+            android:id="@+id/sair"
+            android:width="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sair"
+            android:backgroundTint="@color/teal_200"
+            android:layout_marginLeft="15dp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textColor="@color/purple_700"/>
+
+
+</LinearLayout>
