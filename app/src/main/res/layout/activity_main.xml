@@ -19,11 +19,22 @@
         />
 
     <EditText
+        android:id="@+id/nome"
+        android:width="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nome do aluno"
+        android:inputType="text"
+        />
+
+    <EditText
         android:id="@+id/nota1"
         android:width="200dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Nota 1"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
         android:inputType="number"
         />
 
@@ -33,19 +44,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Nota 2"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="12dp"
         android:inputType="number"
         />
 
-    <EditText
-        android:id="@+id/faltas"
-        android:width="200dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Faltas"
-        android:inputType="number"
-        />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -73,6 +74,14 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/informacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textColor="@color/purple_700"/>
+
 
     <TextView
         android:id="@+id/resultado"
@@ -81,6 +90,7 @@
         android:text=""
         android:textSize="24sp"
         android:textColor="@color/purple_700"/>
+
 
 
 </LinearLayout>
